@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/NUnit/">
+    <Project Path="src/NuBehave.Tests/NuBehave.Tests.csproj" />
+    <Project Path="src/NuBehave/NuBehave.csproj" />
+  </Folder>
+  <Folder Name="/XUnit/">
+    <Project Path="src/UBehave.Tests/UBehave.Tests.csproj" />
+    <Project Path="src/UBehave/UBehave.csproj" />
+  </Folder>
+  <Folder Name="/_Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+</Solution>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>UBehave</Product>
+    <Title>UBehave is a Micro-Testhelper for BDD test scenarios.</Title>
+    <Description>UBehave is a Micro-Testhelper for BDD test scenarios to allow Gherkin or any other custom prose language in xUnit.</Description>
+    <PackageTags>xUnit BDD UBehave xBehave Gherkin ATDD</PackageTags>
+    <PackageIcon>UBehave-128.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="UBehave-128.png" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.v3.assert" Version="3.2.2" />
+    <PackageReference Include="xunit.v3.extensibility.core" Version="3.2.2" />
+  </ItemGroup>
+
+</Project>
