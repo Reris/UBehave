@@ -42,6 +42,18 @@ public class CalculatorFeature
 }
 ```
 
+Output:
+
+```txt
+STEP START: 'When I add the numbers 1 + 2 together'
+STEP END: 'When I add the numbers 1 + 2 together' took 00:00:00.0001873
+-----------------------------------------------------------------------
+
+STEP START: 'Then the answer is 3'
+STEP END: 'Then the answer is 3' took 00:00:00.0058363
+------------------------------------------------------
+```
+
 ## Step by step
 
 In BDD-Style, you write your tests first from a user perspective, and then implement the code step by step to make the tests pass. So you start with simple describing test method:

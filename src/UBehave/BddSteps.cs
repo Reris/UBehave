@@ -193,7 +193,7 @@ public static partial class BddSteps
     private static TimeSpan Elapsed(long timestamp)
     {
 #if NETSTANDARD2_0
-        return new TimeSpan((Stopwatch.GetTimestamp() - timestamp) * Stopwatch.Frequency);
+        return new TimeSpan((Stopwatch.GetTimestamp() - timestamp));
 #else
         return Stopwatch.GetElapsedTime(timestamp);
 #endif

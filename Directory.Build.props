@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <Authors>Rainer Erismann</Authors>
-    <Version>0.9.0</Version>
-    <FileVersion>0.9.0</FileVersion>
-    <AssemblyVersion>0.9.0</AssemblyVersion>
+    <Version>0.9.1</Version>
+    <FileVersion>0.9.1</FileVersion>
+    <AssemblyVersion>0.9.1</AssemblyVersion>
     <NeutralLanguage>en</NeutralLanguage>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
