@@ -2,6 +2,11 @@
 
 A micro-library for writing **BDD-style tests in C#**. Inspired by [xBehave.net](https://github.com/adamralph/xbehave.net).
 
+Nuget packages:
+
+* [UBehave](https://www.nuget.org/packages/UBehave/) for xUnit
+* [NuBehave](https://www.nuget.org/packages/NuBehave/) for NUnit.
+
 The goal it to write behavior tests first, and then implement the code to make the tests pass. Which is mainly useful for integration testing, but you're free to use in anywhere.
 
 ## Quickstart
