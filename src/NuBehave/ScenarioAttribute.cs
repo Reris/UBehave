@@ -1,10 +1,12 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using JetBrains.Annotations;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using NUnit.Framework.Internal;
 
 namespace NuBehave;
 
+[MeansImplicitUse]
 [AttributeUsage(AttributeTargets.Method)]
 public class ScenarioAttribute(string name) : NUnitAttribute, ISimpleTestBuilder, IApplyToTest, IImplyFixture
 {

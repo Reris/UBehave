@@ -12,11 +12,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="UBehave-128.png" Pack="true" PackagePath=""/>
+    <None Include="UBehave-128.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="4.5.0" />
+    <PackageReference Include="JetBrains.Annotations" Version="2025.2.4" />
+    <PackageReference Include="NUnit" Version="4.5.1" />
   </ItemGroup>
 
 </Project>

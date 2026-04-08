@@ -1,11 +1,13 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
+using JetBrains.Annotations;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using NUnit.Framework.Internal;
 
 namespace NuBehave;
 
+[MeansImplicitUse]
 [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
 public class InlineDataAttribute(params object?[]? arguments) : NUnitAttribute, ITestBuilder, ITestCaseData, IImplyFixture
 {

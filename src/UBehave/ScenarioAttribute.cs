@@ -1,8 +1,10 @@
 ﻿using System;
+using JetBrains.Annotations;
 using Xunit;
 
 namespace UBehave;
 
+[MeansImplicitUse]
 [AttributeUsage(AttributeTargets.Method)]
 public class ScenarioAttribute : FactAttribute
 {

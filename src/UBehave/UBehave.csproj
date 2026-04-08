@@ -10,10 +10,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="UBehave-128.png" Pack="true" PackagePath=""/>
+    <None Include="UBehave-128.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2025.2.4" />
     <PackageReference Include="xunit.v3.assert" Version="3.2.2" />
     <PackageReference Include="xunit.v3.extensibility.core" Version="3.2.2" />
   </ItemGroup>
