@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading;
 using System.Threading.Tasks;
+using JetBrains.Annotations;
 
 #pragma warning disable IDE1006
 #pragma warning disable IDE0079
@@ -19,7 +20,7 @@ public static partial class BddSteps
     /// <param name="step">Prose-Description of the processed step.</param>
     /// <param name="test">Function which runs the processed step.</param>
     [SuppressMessage("ReSharper", "InconsistentNaming", Justification = "BDD Exclusive")]
-    public static async ValueTask<BddStep> x(this string step, Func<ValueTask> test)
+    public static async ValueTask<BddStep> x(this string step, [InstantHandle] Func<ValueTask> test)
     {
         _ = step ?? throw new ArgumentNullException(nameof(step));
         _ = test ?? throw new ArgumentNullException(nameof(test));
@@ -48,7 +49,7 @@ public static partial class BddSteps
     /// <param name="step">Prose-Description of the processed step.</param>
     /// <param name="test">Function which runs the processed step.</param>
     [SuppressMessage("ReSharper", "InconsistentNaming", Justification = "BDD Exclusive")]
-    public static ValueTask<BddStep> x(this string step, Action test)
+    public static ValueTask<BddStep> x(this string step, [InstantHandle] Action test)
     {
         _ = step ?? throw new ArgumentNullException(nameof(step));
         _ = test ?? throw new ArgumentNullException(nameof(test));
@@ -77,7 +78,7 @@ public static partial class BddSteps
     /// <param name="step">Prose-Description of the processed step.</param>
     /// <param name="test">Function which runs the processed step.</param>
     [SuppressMessage("ReSharper", "InconsistentNaming", Justification = "BDD Exclusive")]
-    public static async ValueTask<BddStep<T>> x<T>(this string step, Func<ValueTask<T>> test)
+    public static async ValueTask<BddStep<T>> x<T>(this string step, [InstantHandle] Func<ValueTask<T>> test)
     {
         _ = step ?? throw new ArgumentNullException(nameof(step));
         _ = test ?? throw new ArgumentNullException(nameof(test));
@@ -107,7 +108,7 @@ public static partial class BddSteps
     /// <param name="step">Prose-Description of the processed step.</param>
     /// <param name="test">Function which runs the processed step.</param>
     [SuppressMessage("ReSharper", "InconsistentNaming", Justification = "BDD Exclusive")]
-    public static ValueTask<BddStep<T>> x<T>(this string step, Func<T> test)
+    public static ValueTask<BddStep<T>> x<T>(this string step, [InstantHandle] Func<T> test)
     {
         _ = step ?? throw new ArgumentNullException(nameof(step));
         _ = test ?? throw new ArgumentNullException(nameof(test));
