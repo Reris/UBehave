@@ -4,11 +4,11 @@ A micro-library for writing **BDD-style tests in C#**. Inspired by [xBehave.net]
 
 Nuget packages:
 
-* [![NuGet](https://img.shields.io/nuget/v/UBehave.svg)](https://www.nuget.org/packages/UBehave/) [![NuGet downloads](https://img.shields.io/nuget/dt/UBehave.svg)](https://www.nuget.org/packages/UBehave/)[UBehave](https://www.nuget.org/packages/UBehave/) for xUnit  
-* [![NuGet](https://img.shields.io/nuget/v/NuBehave.svg)](https://www.nuget.org/packages/NuBehave/) [![NuGet downloads](https://img.shields.io/nuget/dt/NuBehave.svg)](https://www.nuget.org/packages/NuBehave/)[NuBehave](https://www.nuget.org/packages/NuBehave/) for NUnit  
+* [UBehave](https://www.nuget.org/packages/UBehave/) for xUnit - [![NuGet](https://img.shields.io/nuget/v/UBehave.svg)](https://www.nuget.org/packages/UBehave/) [![NuGet downloads](https://img.shields.io/nuget/dt/UBehave.svg)](https://www.nuget.org/packages/UBehave/) 
+* [NuBehave](https://www.nuget.org/packages/NuBehave/) for NUnit - [![NuGet](https://img.shields.io/nuget/v/NuBehave.svg)](https://www.nuget.org/packages/NuBehave/) [![NuGet downloads](https://img.shields.io/nuget/dt/NuBehave.svg)](https://www.nuget.org/packages/NuBehave/)
   
 
-The goal it to write behavior tests first, and then implement the code to make the tests pass. Which is mainly useful for integration testing, but you're free to use in anywhere.
+The goal it to write behavior tests first, and then implement the code to make the tests pass. Which is mainly useful for integration testing, but you're free to use it anywhere.
 
 ## Quickstart
 

@@ -43,9 +43,7 @@ jobs:
         uses: dorny/test-reporter@v2
         with:
           name: Tests
-          path: |
-            artifacts/test/**/*.trx
-            !artifacts/test/merged/**
+          path: artifacts/test/*/*/*.trx
           reporter: dotnet-trx
           list-suites: all
           list-tests: all
