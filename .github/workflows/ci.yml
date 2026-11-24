@@ -1,4 +1,4 @@
-name: CI
+﻿name: CI
 
 on:
   push:
@@ -14,6 +14,9 @@ env:
 jobs:
   build-test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      checks: write # test report check run
     steps:
       - uses: actions/checkout@v4
 
@@ -31,7 +34,22 @@ jobs:
         run: dotnet build UBehave.slnx -c Release --no-restore
 
       - name: Test
-        run: dotnet test UBehave.slnx -c Release --no-build
+        run: >
+          dotnet test --solution UBehave.slnx -c Release --no-build
+          --report-trx --report-trx-filename "{asm}.trx"
+
+      - name: Test report
+        if: ${{ !cancelled() }}
+        uses: dorny/test-reporter@v2
+        with:
+          name: Tests
+          path: |
+            artifacts/test/**/*.trx
+            !artifacts/test/merged/**
+          reporter: dotnet-trx
+          list-suites: all
+          list-tests: all
+          use-actions-summary: true
 
   publish:
     needs: build-test
