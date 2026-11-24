@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Authors>Rainer Erismann</Authors>
-    <Version>0.10.0-alpha-1</Version>
+    <Version>0.10.0</Version>
     <FileVersion>0.10.0</FileVersion>
     <AssemblyVersion>0.10.0</AssemblyVersion>
     <TargetFramework>net10.0</TargetFramework>
