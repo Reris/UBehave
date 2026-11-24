@@ -14,4 +14,8 @@
     <File Path="LICENSE" />
     <File Path="README.md" />
   </Folder>
+  <Folder Name="/_Solution Items/.github/" />
+  <Folder Name="/_Solution Items/.github/workflows/">
+    <File Path=".github/workflows/ci.yml" />
+  </Folder>
 </Solution>
