@@ -1,9 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
     <Product>NuBehave</Product>
     <Title>NuBehave is a Micro-Testhelper for BDD test scenarios.</Title>
     <Description>NuBehave is a Micro-Testhelper for BDD test scenarios to allow Gherkin or any other custom prose language in NUnit.</Description>
@@ -17,7 +15,7 @@
 
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="2026.2.0" />
-    <PackageReference Include="NUnit" Version="4.6.1" />
+    <PackageReference Include="NUnit" Version="5.0.0" />
   </ItemGroup>
 
 </Project>
